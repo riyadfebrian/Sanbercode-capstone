@@ -1,0 +1,62 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+
+\title{Tugas 1 Python \& Data Science Bootcamp}
+\author{Riyad Febrian - riyadfebrian@gmail.com}
+\date{July 2020}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{enumerate}
+    \item Apa yang kamu ketahui tentang Web Scraping ?
+    
+        \emph{Webscraping} merupakan salah satu teknik dalam \emph{data mining} atau penggalian data dengan melakukan ekstraksi konten dari html web
+    
+    \item Sebutkan \emph{library} apa saja yang bisa digunakan untuk melakukan \emph{web scraping}
+    
+        \emph{library} yang paling populer untuk web scraping adalah \textbf{beautifoulSoup}, sementara jika yang ingin kita \emph{scrape} hanya tag \emph{table} dari html web, maka \textbf{pandas} lebih mudah untuk digunakan.
+    
+    \item Sebutkan semua tag html yang kamu ketahui beserta kegunaannya
+    
+        Tag html yang biasanya digunakan untuk keperluan scraping :
+        \begin{itemize}
+            \item \emph{\textless body\textgreater} :
+            tag ini mengandung konten utama keseluruhan dari sebuah html
+            
+            \item \emph{\textless div\textgreater} :
+            tag ini mengandung konten-konten yang lebih spesifik, biasanya dibarengi dengan \emph{property class} atau \emph{id}. Hal ini, memudahkan untuk menyeleksi tag tersebut berdasarkan \emph{class} atau \emph{id}-nya
+            
+            \item \emph{\textless h1\textgreater} \ldots \emph{\textless h6\textgreater} :
+            tag ini untuk \emph{heading}, biasanya dipakai untuk penjudulan. semakin besar nomor headingnya, maka ukuran \emph{fontsize}-nya semakin kecil atau \emph{subheading} dari nomor sebelumnya.
+            
+            \item \emph{\textless p\textgreater} :
+            tag ini mengandung konten paragraf teks
+            
+            \item \emph{\textless table\textgreater}  :
+            tag ini mengandung konten berupa data tabular, tag didalamnya termasuk \emph{table head} \textless th\textgreater, \emph{table row} \textless tr\textgreater, dan \emph{table data} \textless td\textgreater
+            
+              \item \emph{\textless ul\textgreater dan \textless ol\textgreater } :
+            tag \textless ul\textgreater dipakai untuk menampilkan poin-poin dalam \emph{bullet point} sementara \textless ol\textgreater menampilkan poin-poin dalam format \emph{numbering} \emph{i.e} 1..2..dst
+            
+            \item \emph{\textless a\textgreater} :
+            tag ini mengandung referensi link
+    \end{itemize}
+    
+    \item Sebutkan pengalaman kamu dalam bahasa pemrograman python
+    
+        Pengalaman pertama kali menggunakan python tahun 2015, dimana saat itu materi python merupakan bagian dari mata kuliah administrasi jaringan, jadi implementasi python-nya lebih ke \emph{networking} seperti membuat \emph{basic} TCP, UDP, dll.
+        
+        Sejujurnya, di jurusan saya diajarkan \emph{multilingual language} dari bahasa paling low level seperti Assembly sampai ke high level seperti C++, Java, Python. Suatu saat saya berfikir bahwa saya nggak bisa menjadi orang yang \emph{jack of all trades}, saya harus memilih 1 bahasa dan menguasai bahasa tersebut. Di tahun 2018, saya mulai tertarik untuk mendalami python dan menjatuhkan pilihan untuk menguasai python setelah terekspos soal AI/Machine Learning dan Data Science. 
+        
+        beberapa \emph{Project} yang telah saya kerjakan yaitu \emph{Scraping} Data gejala penyakit dari web HelloSehat, Implementasi Reinforcement Learning pada Quadcopter, analisis beberapa project \emph{basic data science}.
+    
+    \item Kelas python lanjutan seperti apa yang kamu harapkan di SanberCode kedepannya ?
+    
+        Disamping mengenalkan peserta dengan teknologi Deep learning dan lainnya, Harapannya bisa lebih membahas implementasi teknik-teknik statistika tingkat lanjut untuk handle data tertentu atau \emph{improve} machine learning dengan studi kasus dari \emph{real project}. 
+\end{enumerate}
+
+\end{document}
