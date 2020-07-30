@@ -1,0 +1,81 @@
+\documentclass{report}
+
+\usepackage{enumitem}
+
+% package for code
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+
+    
+% json listing
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
+
+\title{Tugas 9 Python \& Data Science Bootcamp}
+\author{Riyad Febrian - riyadfebrian@gmail.com}
+\date{July 2020}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate} [label=\Alph*]
+    \item Soal
+    \begin{enumerate} [label=\arabic*]
+        \item Ceritakan kembali apa yang kalian ketahui tentang JSON
+        \item Data Jouska yang telah kalian ambil pada tugas ke-8 coba kalian ubah ke dalam dataframe pandas lalu diubah kedalam JSON. Dengan ketentuan:
+            \begin{itemize}
+                \item Jumlah tweetnya 50
+                \item Diambil dari tanggal 25 Juli
+                \item Dalam dataframe harus ada kolom User, Lokasi, dan Tweet
+                \item Ubah Data tersebut kedalam JSON
+                \item Hasil print(JSON) itulah yang diisikan kedalam file PDF
+            \end{itemize}
+    \end{enumerate}
+    
+    \item Jawaban
+        \begin{enumerate}[label=\arabic*]
+            \item  \textbf{JSON} merupakan \emph{Javascript Object Notation} yang digunakan sebagai format data dalam melakukan pertukaran dan penyimpanan data. JSON bisa diibaratkan sebagai bahasa bersama (\emph{global}) yang dimengerti oleh semua sistem, sehingga memudahkan interaksi data ketika menggunakan format JSON. Selain itu, JSON juga lebih \emph{human readable}
+            
+            \item Hasil JSON
+              \lstinputlisting[language=json, firstnumber=1]{result_JOUSKA.json}
+        \end{enumerate}
+        
+        
+    
+
+\end{enumerate}
+
+
+\end{document}
